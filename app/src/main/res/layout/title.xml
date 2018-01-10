@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x48"
+    android:background="#2397f3"
+    android:paddingTop="@dimen/x20">
+
+    <RelativeLayout
+        android:id="@+id/rl_back"
+        android:layout_width="@dimen/x40"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+       >
+
+        <ImageView
+            android:layout_width="@dimen/x8"
+            android:layout_height="@dimen/x14"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/back" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_name"
+        style="@style/title_tv_style"
+        android:layout_centerHorizontal="true"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:text="精选"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_collect"
+        android:layout_width="@dimen/x40"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x10"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/iv_collect"
+            android:layout_width="@dimen/x12"
+            android:layout_height="@dimen/x12"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/collection" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_collect_clear"
+        android:layout_width="@dimen/x40"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x10"
+        android:visibility="gone"
+       >
+
+        <TextView
+            style="@style/common_tv_style"
+            android:layout_centerInParent="true"
+            android:text="清除" />
+
+    </RelativeLayout>
+</RelativeLayout>

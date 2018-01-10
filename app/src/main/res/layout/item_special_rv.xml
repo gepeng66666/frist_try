@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x120">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:layout_margin="@dimen/x6"
+        android:padding="@dimen/x4"
+        android:background="@color/white_translucent_20">
+
+        <ImageView
+            android:id="@+id/special_rv_img"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="@dimen/x100" />
+
+        <TextView
+            android:id="@+id/special_rv_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/x4"
+            android:textSize="@dimen/x8"
+            android:textColor="@color/white"
+            android:background="@color/black_translucent"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="忍者神龟"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

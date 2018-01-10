@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.geekghost.gp.geekghost.activity.MainActivity">
+
+    <com.geekghost.gp.geekghost.myview.ResideLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--侧拉页面-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_blue">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/x35"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_width="@dimen/x200"
+                android:layout_height="@dimen/x320"
+                android:orientation="vertical">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/my_image_view"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    fresco:placeholderImage="@drawable/photo"
+                    fresco:roundAsCircle="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x14"
+                    android:layout_marginBottom="@dimen/x10"
+                    android:textSize="@dimen/x12"
+                    android:textColor="@color/white"
+                    android:text="微影,微一下"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/drawer_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginBottom="@dimen/x20"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/x18"
+                    android:layout_height="@dimen/x18"
+                    android:src="@drawable/like"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x6"
+                    android:textSize="@dimen/x10"
+                    android:textColor="@color/white"
+                    android:text="关于"/>
+
+                <ImageView
+                    android:layout_width="@dimen/x18"
+                    android:layout_height="@dimen/x18"
+                    android:layout_marginLeft="@dimen/x25"
+                    android:src="@drawable/like"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x6"
+                    android:textSize="@dimen/x10"
+                    android:textColor="@color/white"
+                    android:text="主题"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <!--主页面-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff">
+
+            <com.hjm.bottomtabbar.BottomTabBar
+                android:id="@+id/bottom_tab_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            </com.hjm.bottomtabbar.BottomTabBar>
+
+        </LinearLayout>
+    </com.geekghost.gp.geekghost.myview.ResideLayout>
+
+
+    <ImageView
+        android:id="@+id/start_img"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/start_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/x12"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:text="my微影"
+        android:layout_marginBottom="@dimen/x20"/>
+
+
+</RelativeLayout>
